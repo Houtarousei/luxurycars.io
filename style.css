@@ -1,0 +1,162 @@
+html
+{
+    overflow: hidden;
+
+}
+
+body
+{
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.nav
+{
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    height: 3%;
+    width: 100%;
+    float: left;
+    color: aliceblue;
+    
+}
+
+.splash
+{
+    height: 94%;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0);
+    float: left;
+}
+  
+.bar
+{
+    position: relative;
+    display:flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+ 
+}
+.bar p
+{
+   
+    text-decoration: none;
+    font-size: 12px;
+    margin:auto;
+    margin-left: 50px;
+    margin-right:50px;
+    background-color: bisque;
+    
+}
+
+#panel1
+  {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+    scroll-snap-type: y mandatory;
+    
+
+  }
+#panel2
+{
+  position: absolute;
+  display: flex;
+  top:100%;
+  width: 100%;
+  height: 100%;
+  
+}
+
+#panel3
+{
+  position: absolute;
+  display: flex;
+  top: 200%;
+  width: 100%;
+  height: 100%;
+}
+
+#panel4
+{
+  position: absolute;
+  display: flex;
+  top: 300%;
+  width: 100%;
+  height: 100%;
+
+  
+}
+ 
+.container {  
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(8, 4, 4);
+}
+
+
+
+.con
+{
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 50%;
+  background-color: rgba(0, 255, 255, 0);
+  margin-top: 15%;
+ 
+}
+
+.content
+{
+    position: relative;
+    height: 94%;
+    width: 50%;
+    float: left; 
+    pointer-events: none;
+}
+
+.about
+{
+  position: absolute;
+  display: flex;
+  z-index:1;
+  width: 3%;
+  height:100%;
+  right:0;
+  margin-right: 10px;
+
+}
+
+.about p
+{
+  font-family: 'venus';
+}
+.corps
+{
+    position: absolute;
+   left: 3%;
+    bottom: 8%;
+    z-index: 4;
+
+}
+
+
+.nav
+{
+  z-index: 2;
+  transition: 0.5s;
+}
+.menu:hover 
+{
+  filter: drop-shadow(1px 1px 5px rgb(255, 0, 0));
+  transition: 0.5s;
+}

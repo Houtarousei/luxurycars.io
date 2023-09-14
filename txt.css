@@ -1,0 +1,137 @@
+
+@font-face {
+  font-family: "Venus";
+  src: url("fonts/Venus.ttf") format("truetype");
+
+  }
+
+
+
+.txt
+{
+  position: relative;
+  color: aliceblue;
+  font-size: 70px;
+  top: 7%;
+  left: 13%;
+  font-family: "Venus";
+}
+
+.specs
+{
+ 
+  position: relative;
+  color:aliceblue;
+  font-family: 'Venus';
+  bottom: 5%;
+
+}
+
+
+.specs ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin-left: 40px; /* Remove margins */
+    display:flex;
+   float: right;
+     
+  }
+  .specs li
+  {
+    
+
+    font-size: 30px;
+    margin-right: 30px;
+    padding-right: 30px;
+    border-right: solid 1px white;
+
+
+  }
+  .specs li:last-child
+  {
+    border-right: 0;
+  }
+ 
+  .pcontent> .txt
+{
+  background-color: rgba(0, 255, 255, 0);
+  position: absolute;
+  left:-200px;
+  top:-10;
+  margin-top: 50%;
+  margin-bottom: 50;
+}
+.content> .txt
+{
+
+  top:0;
+}
+
+.about a:nth-child(1)
+{
+  position:absolute;
+  display: flex;
+  width: 100%;
+  height:140px ;
+  top: -70%;
+  bottom: 0;
+  margin-top:auto;
+  margin-bottom:auto;
+
+
+
+
+}
+
+.about a:nth-child(2)
+{
+  position:absolute;
+  display: flex;
+  width: 100%;
+  height:5% ;
+  top: -40%;
+  bottom: 0;
+  margin-top:auto;
+  margin-bottom:auto;
+
+
+}
+
+.about a:nth-child(3)
+{
+  position:absolute;
+  display: flex;
+  width: 100%;
+  height:5% ;
+  top: -5%;
+  bottom: 0;
+  margin-top:auto;
+  margin-bottom:auto;
+
+
+}
+.about a:nth-child(4)
+{
+  position:absolute;
+  display: flex;
+  width: 100%;
+  height:5% ;
+  top: 26%;
+  bottom: 0;
+  margin-top:auto;
+  margin-bottom:auto;
+
+
+}
+.about p
+{
+  position: absolute;
+  display: flex;
+  top:40%;
+  left:50%;
+  color: rgb(255, 255, 255);
+  text-decoration:none;
+  font-size: 10px;
+ 
+}
+

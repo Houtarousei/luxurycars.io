@@ -1,0 +1,172 @@
+.carousel ol,.carousel li {
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    
+  }
+  .carousel {
+    position: absolute;
+    padding-top: 75%;
+    filter: drop-shadow(0 0 10px #0003);
+    perspective: 100px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  
+    
+  }
+  .carousel__viewport {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    overflow-x: scroll;
+    counter-reset: item;
+    scroll-behavior:auto;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+    
+  }
+  .carousel__slide {
+
+    flex: 0 0 100%;
+    height: 100%;
+    counter-increment: item;
+    background-color: black;
+    scroll-snap-align: start;
+    
+  }
+  
+  .carousel__slide:nth-child(2) {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+   
+  
+  }
+  .carousel__slide:nth-child(3) {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+ 
+  }
+  
+  * {
+    box-sizing: border-box;
+    scrollbar-color: transparent transparent; /* thumb and track color */
+    scrollbar-width: 0px;
+  }
+  
+  *::-webkit-scrollbar {
+    width: 0;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: none;
+  }
+  
+  * {
+    -ms-overflow-style: none;
+  }
+
+
+  
+.carousel__navigation {
+
+  position: absolute;
+  display: flex;
+  width: 100px;
+  height: 40%;
+   left:0;  
+   top:100px;
+   bottom: 0;
+   margin-bottom:auto;
+   margin-top:auto;
+   z-index: 2;
+   margin-left: 5%;
+   background-color: rgba(0, 255, 255, 0);
+}
+
+
+.carousel__navigation-list
+{
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel__navigation-item
+{
+  position: absolute;
+  left: 50%;
+}
+
+.carousel__navigation-item:nth-child(1)
+{
+  position: absolute;
+  top:29%;
+}
+
+.carousel__navigation-item:nth-child(2)
+{
+  position: absolute;
+  top:49%;
+}
+
+.carousel__navigation-item:nth-child(3)
+{
+  position: absolute;
+  top:69%;
+}
+
+.carousel__navigation-button {
+  position: absolute;
+  display: flex;
+  background-color: #ffffff;
+  border: 0.25rem solid transparent;
+  border-radius: 50%;
+  font-size: 0;
+  transform: scale(0.7);
+}
+
+.carousel__navigation-button-mid {
+
+  display: flex;
+  background-color: #f8f3f3;
+  border: 0.25rem solid transparent;
+  border-radius: 50%;
+  font-size: 0;
+  transform: scale(0.7);
+  transition: transform 1s;
+
+
+}
+
+.carousel__navigation-button-last{
+
+  display: flex;
+  background-color: #f8f3f3;
+  border: 0.25rem solid transparent;
+  border-radius: 50%;
+  font-size: 0;
+  transform: scale(0.7);
+ 
+
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+

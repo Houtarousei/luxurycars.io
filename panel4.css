@@ -1,0 +1,364 @@
+
+
+.p4bg
+{
+ position: absolute;
+ display: flex;
+ width: 100%;   
+ height: 100%;
+ 
+}
+
+.p4lugu
+{
+    position: absolute;
+    display: flex;
+    width: 60%;   
+    height: 70%;
+    top:10%;
+    left:0%;
+    mix-blend-mode: color-dodge;
+    opacity: 0.2;
+}
+
+.svg{
+    filter: invert(0);
+}
+
+.p4con
+{
+    position: absolute;
+
+    border-radius: 25px;
+    width: 40%;   
+    height: 80%;
+    top:5%;
+    right:4%;
+    background-color: rgba(0, 0, 0, 0.295);
+    
+    
+    
+
+}
+.p{
+    position: absolute;
+    color: aliceblue;
+    font-size: 26px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 30%;
+    
+}
+
+.svg
+{
+    margin-left: 10%;
+
+}
+
+.p:nth-child(1)
+{
+    top:2%;
+    margin-left: 3%;
+    font-size: 20px;
+    
+    
+}
+
+.p:nth-child(3)
+{
+    top:20%;
+    opacity: 0;
+
+}
+.p:nth-child(5)
+{
+    top:39%;
+    opacity: 0;
+
+}
+
+.p:nth-child(7)
+{
+    top:58%;
+    opacity: 0;
+}
+
+.p:nth-child(9)
+{
+    top:75%;
+    opacity: 0;
+}
+
+.svg:nth-child(2)
+{
+
+    position: absolute;
+    top: 21%;
+    width: 60px;
+    opacity: 0;
+  
+    
+    
+   
+}
+
+
+.svg:nth-child(4)
+{
+    width: 60px;
+    opacity: 0;
+    position: absolute;
+    top:40%;
+    animation-delay: 0.2s;
+    
+    
+    
+    
+    
+    
+    
+    ;  
+}
+
+.svg:nth-child(6)
+{
+    width: 60px;
+    opacity: 0;
+    position: absolute;
+    top:58%;
+    animation-delay: 0.3s;
+}
+.svg:nth-child(8)
+{
+    width: 59px;
+    opacity: 0;
+    position: absolute;
+    top:75%;
+   animation-delay: 0.4s;
+}
+
+@font-face {
+    font-family: 'thin';
+    src: url('CaviarDreams.ttf');
+}
+.p
+{
+    font-family: 'thin';
+    display: flex;
+}
+
+.svg
+{
+    display: flex;
+}
+
+
+.icons
+{
+    top:5%;
+    left: 5%;
+    position: absolute;
+    display: flex;
+    width: 40%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0);
+    justify-content: center;
+}
+.icons 
+input
+{
+    position: absolute;
+}
+.icons input:nth-child(2)
+{
+    top:30%;
+    height: 10%;
+    width: 70%;
+    color: antiquewhite;
+    border-style:none ;
+    border-bottom: 1px solid wheat;
+    background-color: rgba(0, 0, 0, 0);
+}
+.icons 
+input:nth-child(3)
+{
+    top:50%;
+    height: 10%;
+    width: 70%;
+    color: antiquewhite;
+    border-style:none ;
+    border-bottom: 1px solid wheat;
+    background-color: rgba(0, 0, 0, 0);
+}
+.icons input:nth-child(4)
+{
+    top:70%;
+    height: 10%;
+    width: 70%;
+    color: antiquewhite;
+    border-style:none ;
+    border-bottom: 1px solid wheat;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+.icons input:focus
+{
+    border-style: none;
+    outline: none;
+    border-bottom: 1px solid wheat;
+
+}
+.icons button
+{
+    background-color: rgb(236, 34, 34);
+    position: absolute;
+    width: 70%;
+    height: 8%;
+    bottom: 4%;
+    border-style: none;
+    color:aliceblue;
+}
+@font-face {
+    font-family: 'air';
+    src: url('/fonts/Airbeat.ttf');
+}
+.p{
+    font-family: 'air';
+    font-size: 20px;
+}
+
+.icons button
+{
+ font-family: 'air';
+}
+
+.p4con li 
+{
+    position: relative;
+    background-color: aqua;
+    height: 30px;
+    width: 30px;
+
+}
+
+.p4con svg
+{
+    position: absolute;
+    display:flex;
+    
+}
+
+@keyframes mov 
+{
+    0%
+    {
+        right:10%;
+    }
+    100%
+    {
+
+    }
+}
+
+
+
+@keyframes mov
+{
+    0%
+    {
+        opacity: 0;
+        left: 60%;
+    }
+    100%
+    {
+        left: 0%;
+        opacity: 1;
+
+    }
+    
+}
+
+@keyframes sc
+{
+    0%
+    {
+        
+        scale: 1.4;
+    }
+    100%
+    {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+.meh
+{
+    animation: mov 1s;
+    animation-fill-mode:forwards;
+
+}
+
+.sc
+{
+    animation: sc 1s;
+    animation-fill-mode:forwards;
+
+}
+
+#panel4:focus
+{
+    .svg:nth-child(2)
+    {
+        
+        animation: sc 1s;
+        animation-fill-mode:forwards;
+    }
+    .svg:nth-child(4)
+    {
+        animation: sc 1s;
+        animation-fill-mode:forwards;
+    }
+    .svg:nth-child(6)
+    {
+        animation: sc 1s;
+        animation-fill-mode:forwards;
+    }
+    .svg:nth-child(8)
+    {
+        animation: sc 1s;
+        animation-fill-mode:forwards;
+    }
+
+
+    .p:nth-child(3)
+    {
+        animation: mov 1s;
+        animation-fill-mode:forwards;
+    }
+    
+    .p:nth-child(5)
+    {
+        animation: mov 1s;
+        animation-fill-mode:forwards;
+    }
+    .p:nth-child(7)
+    {
+        animation: mov 1s;
+        animation-fill-mode:forwards;
+    }
+    .p:nth-child(9)
+    {
+        animation: mov 1s;
+        animation-fill-mode:forwards;
+    }
+
+    .icons
+    {
+        animation: sc 1s;
+        animation-fill-mode:forwards;
+    }
+}
+
+
